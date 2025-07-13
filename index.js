@@ -4,12 +4,12 @@ const cors = require("cors");
 
 const port = process.env.PORT || 8000;
 
-app.use(cors()); // <-- Call the cors() function
+app.use(cors());
 
 app.get("/", (req, res) => {
   setTimeout(() => {
     res.json({ status: "ok" });
-  }, 30000); // 1-min delay
+  }, 30000); // 30 sec delay
 });
 
 app.listen(port, () => {
