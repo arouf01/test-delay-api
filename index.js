@@ -9,7 +9,7 @@ app.use(cors()); // <-- Call the cors() function
 app.get("/", (req, res) => {
   setTimeout(() => {
     res.json({ status: "ok" });
-  }, 60000); // 1-min delay
+  }, 30000); // 1-min delay
 });
 
 app.listen(port, () => {
